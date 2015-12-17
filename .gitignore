@@ -3,3 +3,4 @@ __pycacho__
 *.pyc
 venv/*
 .idea*
+functional_tests/screendumps
