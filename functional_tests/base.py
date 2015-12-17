@@ -40,8 +40,8 @@ class FunctionalTest(StaticLiveServerTestCase):
                 self.browser.switch_to_window(handle)
                 self.take_screenshot()
                 self.dump_html()
-            self.browser.quit()
-            super().tearDown()
+        self.browser.quit()
+        super().tearDown()
 
     def _test_has_failed(self):
         # for 3.4. in 3.3, can just use self._outcomeForDoCleanups.success:
