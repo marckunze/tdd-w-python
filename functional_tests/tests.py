@@ -6,7 +6,6 @@ from selenium.webdriver.common.keys import Keys
 class NewVisitorTest(LiveServerTestCase):
 
     def setUp(self):
-        #start virtual display for headless testing
         display = Display(visible=0, size=(1024,768))
         display.start()
 
